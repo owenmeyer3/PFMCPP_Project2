@@ -65,7 +65,8 @@ the 'auto' keyword. c) pass the local variables to ignoreUnused() as you did in
  */
 
 // 2)
-void variableDeclarations() {
+void variableDeclarations() 
+{
     // example:
     int number =
       2; // declaration of a variable named "number", that uses the primitive
@@ -104,15 +105,10 @@ void variableDeclarations() {
  example:
  note: this example shows the result after completing steps 3-8
  */
-bool rentACar(
-    int rentalDuration,
-    int carType = 0) // function declaration with random number of arguments,
-                     // arbitrary number of arguments have default value
+bool rentACar(int rentalDuration, int carType = 0) // function declaration with random number of arguments, arbitrary number of arguments have default value
 {
-    ignoreUnused(rentalDuration, carType); // passing each function parameter to
-                                         // the ignoreUnused() function
-    return {}; // if your function returns something other than void, add 'return
-             // {};' at the end of it.
+    ignoreUnused(rentalDuration, carType); // passing each function parameter to the ignoreUnused() function
+    return {}; // if your function returns something other than void, add 'return {};' at the end of it.
 }
 
 /*
@@ -251,7 +247,7 @@ int main()
     // 10)
     auto cold = isCold(0.f);
 
-  ignoreUnused(carRented, time, sum, pressure, mostUsedKey, numGrandparents, price, days, character, minutes, cold);
+    ignoreUnused(carRented, time, sum, pressure, mostUsedKey, numGrandparents, price, days, character, minutes, cold);
     std::cout << "good to go!" << std::endl;
     return 0;
 }
