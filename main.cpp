@@ -68,9 +68,7 @@ the 'auto' keyword. c) pass the local variables to ignoreUnused() as you did in
 void variableDeclarations() 
 {
     // example:
-    int number =
-      2; // declaration of a variable named "number", that uses the primitive
-         // type 'int', and the variable's initial value is '2'
+    int number = 2; // declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
     int height = 70;
     int weight = 180;
     
