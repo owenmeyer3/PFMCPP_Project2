@@ -92,10 +92,7 @@ void variableDeclarations()
     unsigned int population = 4000000;
     unsigned int count = 10;
     
-    ignoreUnused(
-      number, height, weight, temperature, speed, pressure, isSad, isHappy,
-      isAlive, distance, time, velocity, letter, symbol, digit, age, population,
-      count); // passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, height, weight, temperature, speed, pressure, isSad, isHappy, isAlive, distance, time, velocity, letter, symbol, digit, age, population, count); // passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -139,7 +136,7 @@ float getPressure(float temperature, float humidity)
 /*
  4)
  */
-char mostUsedKeystroke(char key1, char key2, char key3) 
+char getMostUsedKeystroke(char key1, char key2, char key3) 
 {
     ignoreUnused(key1, key2, key3);
     return {};
@@ -148,9 +145,7 @@ char mostUsedKeystroke(char key1, char key2, char key3)
 /*
  5)
  */
-unsigned int
-getNumberOfGrandmothers(unsigned int numberOfParents,
-                        unsigned int numberOfDeadGrandmothers = 0) 
+unsigned int getNumberOfGrandmothers(unsigned int numberOfParents, unsigned int numberOfDeadGrandmothers = 0) 
 {
     ignoreUnused(numberOfParents, numberOfDeadGrandmothers);
     return {};
@@ -168,8 +163,7 @@ double lookupPrice(double basePrice, double discount = 0)
 /*
  7)
  */
-int countDaysInJail(int numberOfTallyMarks,
-                    int numberOfDaysIForgotToCount = 0) 
+int countDaysInJail(int numberOfTallyMarks, int numberOfDaysIForgotToCount = 0) 
 {
    ignoreUnused(numberOfTallyMarks, numberOfDaysIForgotToCount);
     return {};
@@ -231,7 +225,7 @@ int main()
     // 3)
     auto pressure = getPressure(70.f, 50.f);
     // 4)
-    auto mostUsedKey = mostUsedKeystroke('t', 'e', 's');
+    auto mostUsedKey = getMostUsedKeystroke('t', 'e', 's');
     // 5)
     auto numGrandparents = getNumberOfGrandmothers(4);
     // 6)
