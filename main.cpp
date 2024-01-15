@@ -17,12 +17,12 @@ submitting it for review.
 
  1) Write down the names of the 6 major primitive types available in C++  here:
 
- int
- float
- bool
- double
- char
- unsigned int
+    int
+    float
+    bool
+    double
+    char
+    unsigned int
 
 
 2) for each primitive type, write out 3 variable declarations inside the
@@ -66,34 +66,34 @@ the 'auto' keyword. c) pass the local variables to ignoreUnused() as you did in
 
 // 2)
 void variableDeclarations() {
-  // example:
-  int number =
+    // example:
+    int number =
       2; // declaration of a variable named "number", that uses the primitive
          // type 'int', and the variable's initial value is '2'
-  int height = 70;
-  int weight = 180;
-
-  float temperature = 70.5f;
-  float speed = 5.5f;
-  float pressure = 14.7f;
-
-  bool isSad = false;
-  bool isHappy = true;
-  bool isAlive = true;
-
-  double distance = 5.5;
-  double time = 2.5;
-  double velocity = -5.5;
-
-  char letter = 'a';
-  char symbol = '$';
-  char digit = '1';
-
-  unsigned int age = 18;
-  unsigned int population = 4000000;
-  unsigned int count = 10;
-
-  ignoreUnused(
+    int height = 70;
+    int weight = 180;
+    
+    float temperature = 70.5f;
+    float speed = 5.5f;
+    float pressure = 14.7f;
+    
+    bool isSad = false;
+    bool isHappy = true;
+    bool isAlive = true;
+    
+    double distance = 5.5;
+    double time = 2.5;
+    double velocity = -5.5;
+    
+    char letter = 'a';
+    char symbol = '$';
+    char digit = '1';
+    
+    unsigned int age = 18;
+    unsigned int population = 4000000;
+    unsigned int count = 10;
+    
+    ignoreUnused(
       number, height, weight, temperature, speed, pressure, isSad, isHappy,
       isAlive, distance, time, velocity, letter, symbol, digit, age, population,
       count); // passing each variable declared to the ignoreUnused() function
