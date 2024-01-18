@@ -165,7 +165,7 @@ double lookupPrice(double basePrice, double discount = 0)
  */
 int countDaysInJail(int numberOfTallyMarks, int numberOfDaysIForgotToCount = 0) 
 {
-   ignoreUnused(numberOfTallyMarks, numberOfDaysIForgotToCount);
+    ignoreUnused(numberOfTallyMarks, numberOfDaysIForgotToCount);
     return {};
 }
 
